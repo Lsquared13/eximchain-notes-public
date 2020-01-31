@@ -1,0 +1,24 @@
+{
+  "name": "migrate-stripe-plan",
+  "version": "0.0.1",
+  "description": "Basic script to migrate all Stripe users to new pricing plan",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm i; tsc",
+    "migrate": "node build/index.js migrate"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@eximchain/dappbot-types": "^1.7.9",
+    "@types/yargs": "^13.0.3",
+    "csv-parser": "^2.3.1",
+    "stripe": "^7.10.0",
+    "yargs": "^14.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.3",
+    "@types/stripe": "^7.10.7"
+  }
+}
